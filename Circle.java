@@ -1,4 +1,3 @@
-package com.atguigu.exer;
 
 public class Circle extends GeometricObject {
 
