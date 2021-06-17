@@ -1,4 +1,3 @@
-package com.atguigu.exer2;
 
 public class BoyGirlTest {
 	public static void main(String[] args) {
