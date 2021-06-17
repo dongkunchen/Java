@@ -1,4 +1,3 @@
-package com.atguigu.exer;
 
 public class MyRectangle extends GeometricObject {
 
