@@ -1,4 +1,3 @@
-package com.atguigu.exer1;
 
 public class Circle {
 	private double radius;
