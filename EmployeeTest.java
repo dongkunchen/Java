@@ -1,4 +1,3 @@
-package com.atguigu.exer1;
 
 public class EmployeeTest {
 	public static void mian(String[] args) {
