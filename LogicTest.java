@@ -3,9 +3,9 @@ class LogicTest {
 		boolean b1 = true;
 		int num1 = 10;
 		if(b1 & (num1++ > 0)){
-			System.out.println("и瞷ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鏉变含");
 		}else{
-			System.out.println("и瞷玭ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鍗椾含");
 		}
 			System.out.println("num1 = " + num1);
 			
@@ -13,9 +13,9 @@ class LogicTest {
 		boolean b2 = true;
 		int num2 = 10;
 		if(b2 && (num2++ > 0)){
-			System.out.println("и瞷ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鏉变含");
 		}else{
-			System.out.println("и瞷玭ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鍗椾含");
 		}
 			System.out.println("num2 = " + num2);
 			
@@ -24,9 +24,9 @@ class LogicTest {
 		b3 = false;
 		int num3 = 10;
 		if(b3 & (num3++ > 0)){
-			System.out.println("и瞷ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鏉变含");
 		}else{
-			System.out.println("и瞷玭ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鍗椾含");
 		}
 			System.out.println("num3 = " + num3);
 			
@@ -35,9 +35,9 @@ class LogicTest {
 		b4 = false;
 		int num4 = 10;
 		if(b4 && (num4++ > 0)){
-			System.out.println("и瞷ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鏉变含");
 		}else{
-			System.out.println("и瞷玭ㄊ");
+			System.out.println("鎴戠従鍦ㄥ湪鍗椾含");
 		}
 			System.out.println("num4 = " + num4);
 		
