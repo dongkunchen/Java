@@ -1,4 +1,3 @@
-package com.atguigu.java;
 
 public class AbstractTest {
 	public static void main(String[] args) {
