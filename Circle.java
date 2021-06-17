@@ -1,20 +1,24 @@
+package com.atguigu.exer3;
 
 public class Circle {
-	private double radius;
-	
-	public Circle() {
-		radius = 1.0;
-	}
+	private Double radius;
 
-	public double getRadius() {
+	public Double getRadius() {
 		return radius;
 	}
 
-	public void setRadius(double radius) {
+	public void setRadius(Double radius) {
 		this.radius = radius;
 	}
-	public double findArea() {
-		return Math.PI * radius *radius;
-	}
 
+	public Circle() {
+		super();
+	}
+	
+	public Circle(Double radius) {
+		super();
+		this.radius = radius;
+	}
+	
+	
 }
