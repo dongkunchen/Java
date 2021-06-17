@@ -1,27 +1,51 @@
+package com.atguigu.exer2;
 
 public class Account {
-	
-	private double balance; 
-
-	public Account(double init_balance) {
-		this.balance = init_balance;
+	private int id;
+	private double balance;
+	private double annualInterestRate;
+	public Account(int id, double balance, double annualInterestRate) {
+		super();
+		this.id = id;
+		this.balance = balance;
+		this.annualInterestRate = annualInterestRate;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public double getBalance() {
 		return balance;
 	}
-	public void deposit(double amt) {
-		if(amt > 0) {
-			balance += amt;
-			System.out.println("存款成功");
-		}
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
-	public void withdraw(double amt) {
-		if(balance >= amt) {
-			balance -= amt;
-		    System.out.println("取款成功");	
-		}else {
-			System.out.println("餘額不足");
-		}
+	public double getAnnualInterestRate() {
+		return annualInterestRate;
 	}
+	public void setAnnualInterestRate(double annualInterestRate) {
+		this.annualInterestRate = annualInterestRate;
+	}
+	public double getMonthlyInterest() {
+		return annualInterestRate / 12;
 		
+	}
+	public void withdraw(double amount) {
+		if(balance >= amount) {
+			balance-= amount;
+			return;
+		}
+		System.out.println("餘額不足");
+		
+	}
+	public void deposit(double amount) {
+		if(amount > 0) {
+			balance += amount;
+		}
+		
+	}
+	
+
 }
