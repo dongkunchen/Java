@@ -1,6 +1,3 @@
-package com.atguigu.java1;
-
-
 
 public class USBTest {
 	public static void main(String[] args) {
