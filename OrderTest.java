@@ -1,6 +1,3 @@
-package com.atguigu.exer;
-
-
 
 public class OrderTest {
 	public static void main(String[] args) {
