@@ -1,4 +1,3 @@
-package com.atguigu.exer4;
 
 public class BankTest {
 	public static void main(String[] args) {
