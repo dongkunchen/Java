@@ -1,6 +1,5 @@
-package com.atguigu.exer;
 
-public abstract class GeometricObject {//几何图形
+public abstract class GeometricObject {//幾何圖形
 
 	protected String color;
 	protected double weight;
