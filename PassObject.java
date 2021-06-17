@@ -1,4 +1,3 @@
-package com.atguigu.exer;
 
 public class PassObject {
 	public static void main(String[] args) {
