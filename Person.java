@@ -1,29 +1,20 @@
+package com.atguigu.java;
 
 public class Person {
-	
-	private int age;
-	private String name;
-	
-	public Person(String n ,int a) {
-		age = a;
-		name = n;
-	}
-
-	public void setAge(int a) {
-		if(a < 0 || a > 130) {
-			System.out.println("傳入的數據非法!");
-			return;
-		}
+	String name;
+	int age;
+	public Person() {
 		
-		age = a;
 	}
-	public int getAge() {
-		return age;
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
 	}
-	public void setName(String n) {
-		name = n;
+	public void eat() {
+		System.out.println("吃飯");
 	}
-	public String getName() {
-		return name;
+	public void walk(int distance) {
+		System.out.println("走路,走的距離是," + distance + "公里");
 	}
 }
