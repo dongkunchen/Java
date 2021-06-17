@@ -1,4 +1,3 @@
-package com.atguigu.exer;
 
 public class Kids extends ManKind {
 	private int yearsOld;
