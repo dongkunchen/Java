@@ -1,4 +1,3 @@
-package com.atguigu.exer2;
 
 public class HourlyEmployee extends Employee {
 	private int wage;
