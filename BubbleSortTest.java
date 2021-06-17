@@ -1,4 +1,3 @@
-package com.atguigu.java;
 
 public class BubbleSortTest {
 	public static void main(String[] args) {
