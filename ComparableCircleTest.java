@@ -1,4 +1,3 @@
-package com.atguigu.exer3;
 
 public class ComparableCircleTest {
 	public static void main(String[] args) {
