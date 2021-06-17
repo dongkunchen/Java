@@ -1,5 +1,3 @@
-package com.atguigu.exer1;
-
 public class TriAngle {
 	private double base;
 	private double height;
