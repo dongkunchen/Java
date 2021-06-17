@@ -1,4 +1,3 @@
-package com.atguigu.exer2;
 
 public abstract class Employee {
 	private String name;
