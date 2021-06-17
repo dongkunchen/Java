@@ -1,4 +1,3 @@
-package com.atguigu.java3;
 
 class Father {
 	static {
@@ -27,7 +26,7 @@ public class Son extends Father {
 	}
 
 
-	public static void main(String[] args) { // 由父及子 静态先行
+	public static void main(String[] args) { // 由父及子 靜態先行
 		System.out.println("77777777777");
 		System.out.println("************************");
 		new Son();
