@@ -1,16 +1,50 @@
+package com.atguigu.java;
 
 public class PersonTest {
-	
 	public static void main(String[] args) {
 		
-		Student s = new Student("計算機科學與技術");
-		s.eat();
-		s.walk(10);
+		method(new Student());//匿名對象
 		
-		s.study();
+		Worker worker = new Worker();
+		method1(worker);//非匿名的類非匿名的對象
 		
-		Person p1 = new Person();
-		p1.eat();
+		method1(new Worker());//非匿名的類匿名的對象
+		
+		System.out.println("****************");
+	   
+		
+		Person p = new Person() {
+			public void eat() {
+				System.out.println("吃東西");
+			}
+			public void breath() {
+				System.out.println("好好呼吸");
+				
+			}
+		};
+		method1(p);
+		
+		
 	}
+	
+	public static void method1(Person p) {
+		p.eat();
+		p.breath();
+	}
+	
+	public static void method(Student s) {
+		
+	}
+}
+	
+class Worker extends Person{
+	
+	public void eat() {
+		
+	}
+	public void breath() {
+		
+	}
+
 
 }
