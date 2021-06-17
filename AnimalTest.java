@@ -1,4 +1,3 @@
-package com.atguigu.java;
 
 public class AnimalTest {
 	public static void main(String[] args) {
