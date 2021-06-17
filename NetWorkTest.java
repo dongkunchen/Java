@@ -1,4 +1,3 @@
-package com.atguigu.java1;
 
 //接口應用:代理模式
 
