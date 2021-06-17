@@ -1,4 +1,3 @@
-package com.atguigu.exer3;
 
 public class ComparableCircle extends Circle implements CompareObject{
 	
