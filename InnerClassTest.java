@@ -1,4 +1,3 @@
-package com.atguigu.java2;
 
 public class InnerClassTest {
 	public static void main(String[] args) {
