@@ -1,4 +1,3 @@
-package com.atguigu.exer2;
 
 public class Boy {
 	private String name;
