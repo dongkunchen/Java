@@ -1,4 +1,3 @@
-package com.atguigu.java;
 
 //隨機公式 (int)Math.random() * (b - a + 1) + a; 
 public class ArrayTest1 {
