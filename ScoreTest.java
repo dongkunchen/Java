@@ -1,4 +1,3 @@
-package com.atguigu.exer3;
 
 import java.util.Scanner;
 import java.util.Vector;
