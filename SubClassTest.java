@@ -1,4 +1,3 @@
-package com.atguigu.java8;
 
 public class SubClassTest {
 	
@@ -25,10 +24,10 @@ public class SubClassTest {
 class SubClass extends SuperClass implements CompareA,CompareB{
 	
 	public void method2() {
-		System.out.println("SubClass:上海");
+		System.out.println("SubClass:南京");
 	}
 	public void method3() {
-		System.out.println("SubClass:廣東");
+		System.out.println("SubClass:沖繩");
 	}
 	public void myMethod() {
 		method3();//調用重寫的
