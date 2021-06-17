@@ -1,4 +1,3 @@
-package com.atguigu.exer2;
 
 public class SalariedEmployee extends Employee {
 	private double monthlySalary;
