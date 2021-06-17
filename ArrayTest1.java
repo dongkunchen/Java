@@ -1,34 +1,44 @@
+package com.atguigu.java;
+
+//隨機公式 (int)Math.random() * (b - a + 1) + a; 
 public class ArrayTest1 {
-	
 	public static void main(String[] args) {
-	
-//		int[] arr = new int[4];
-//		for(int i = 0;i < arr.length;i++) {
-//			System.out.println(arr[i]);
-//		}
-//		short[] arr1 = new short[4];
-//		for(int i = 0;i < arr1.length;i++) {
-//			System.out.println(arr1[i]);
-//		}
-//		float[] arr2 = new float[4];
-//		for(int i = 0;i < arr2.length;i++) {
-//			System.out.println(arr2[i]);
-//		}
-//		
-//		boolean[] arr3 = new boolean[4];
-//		for(int i = 0;i < arr3.length;i++) {
-//			System.out.println(arr3[i]);
-//		}
-//		char[] arr4 = new char[4];
-//		for(int i = 0;i < arr4.length;i++) {
-//			System.out.println(arr4[i]);
-//		}
-//		
-		String[] arr5 = new String[4];
-		for(int i = 0;i < arr5.length;i++) {
-			System.out.println(arr5[i]);
+		int[] arr = new int[10];
+		
+		for(int i = 0;i < arr.length;i++) {
+			arr[i] = (int)(Math.random()*90+10);
 		}
 		
+		for(int i = 0;i < arr.length;i++) {
+			System.out.print(arr[i] + " ");
+			
+		}
+		int maxValue = arr[0];
+		for(int i = 0;i < arr.length;i++) {
+			if(maxValue < arr[i]) {
+				maxValue = arr[i];
+			}
+		}
+		System.out.println("\n最大值: " + maxValue);
+		
+		int minValue = arr[0];
+		for(int i = 0;i < arr.length;i++) {
+			if(minValue > arr[i]) {
+				minValue = arr[i];
+			}
+		}
+		System.out.println("最小值: " + minValue);
+		
+		int sum = 0;
+		for(int i = 0;i < arr.length;i++) {
+			sum += arr[i];
+			
+		}
+		System.out.println("總 和: " + sum);
+		
+		
+		double avgvalue = (double)sum / arr.length;
+		System.out.println("平 均: " + avgvalue);
 	}
 
 }
