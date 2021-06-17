@@ -1,4 +1,3 @@
-package com.atguigu.exer1;
 
 public class CylinderTest {
 	public static void main(String[] args) {
