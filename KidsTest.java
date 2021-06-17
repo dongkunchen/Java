@@ -1,4 +1,3 @@
-package com.atguigu.exer;
 
 public class KidsTest {
 	public static void main(String[] args) {
