@@ -1,4 +1,3 @@
-package com.atguigu.exer2;
 
 public class CheckAcountTest {
 	public static void main(String[] args) {
