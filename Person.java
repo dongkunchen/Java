@@ -1,5 +1,20 @@
-package com.atguigu.java4;
+package com.atguigu.java;
 
 public class Person {
-
+	String name;
+	int age;
+	public Person() {
+		
+	}
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	public void eat() {
+		System.out.println("吃飯");
+	}
+	public void walk(int distance) {
+		System.out.println("走路,走的距離是," + distance + "公里");
+	}
 }
