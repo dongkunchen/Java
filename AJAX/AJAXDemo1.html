@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用原生js方法</title>
+    <script>
+        function fun(){
+            let xmlhttp;
+            //1.處理兼容
+            if(window.XMLHttpRequest){
+                //IE7,Firefox,Chrome
+                xmlhttp=new XMLHttpRequest();
+            }else {
+                //IE5 IE6
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            //2.打開連接
+            xmlhttp.open("GET","ajaxServlet?username=tom",true);//false為同步delay時無法操作
+            //3.發送請求
+            xmlhttp.send();
+            //4.接收處理來自服務器(servlet)響應
+            xmlhttp.onreadystatechange=function () {
+                //就緒狀態為4 響應狀態碼為200
+                if (xmlhttp.readyState == 4) {
+                    if (xmlhttp.status <= 200 || xmlhttp.status >= 302) {
+                        //獲取響應結果
+                        let responseText = xmlhttp.responseText;
+                        alert(responseText);
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="發送異步請求" onclick="fun();">
+    <input type="text">
+</body>
+</html>

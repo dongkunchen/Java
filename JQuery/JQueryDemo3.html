@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件綁定</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        <!--JQuery寫在上面-->
+        /*
+        window.onload = function () {
+            $("#btn").click(function () {
+                  alert("你點擊了")
+             });
+        }
+        */
+        // JQuery入口函數()//window.onload
+        /*
+        $(function () {
+            $("#btn").click(function () {
+                alert("你點擊了")
+            });
+        });
+        */
+        /*window.onload 和 $(function)區別
+            window.onload只能定義一次,定義多次後面覆蓋前邊
+             $(function)可以定義多次,按定義順序出現
+        */
+        /*
+        window.onload = function () {
+            alert("abc")
+        }
+        window.onload = function () {
+            alert("cde")
+        }
+         */
+        /*
+        $(function () {
+           alert("abc")
+        });
+        $(function () {
+           alert("cde")
+        });
+         */
+
+        //改變樣式
+        $(function () {
+           // $("#div1").css("background-color","red");
+           $("#div1").css("backgroundColor","yellow");
+        });
+
+
+    </script>
+</head>
+<body>
+<div id="div1">div1....</div>
+<div id="div2">div2....</div>
+<input type="button" value="點我" id="btn">
+<!--<script>-->
+<!--事件綁定-->
+<!--    $("#btn").click(function () {-->
+<!--        alert("你點擊了")-->
+<!--    });-->
+<!--</script>-->
+</body>
+</html>

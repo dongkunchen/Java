@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>動畫效果</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function hideFunc(){
+            // 默認方式
+            // $("#showDiv").hide("slow","swing",function () {
+            //     alert("隱藏了");
+            // });
+            // $("#showDiv").hide("fast","swing");
+            // $("#showDiv").hide(5000,"swing");
+            // 滑動方式 收起
+            // $("#showDiv").slideUp("slow","swing");
+            // 淡入淡出方式
+            $("#showDiv").fadeOut("slow","swing");
+        }
+
+        function showFunc() {
+            // 默認方式
+            // $("#showDiv").show("slow","swing",function () {
+            //     alert("顯示了");
+            // });
+            // 滑動方式 拉下
+            // $("#showDiv").slideDown("slow","swing");
+            // 淡入淡出方式
+            $("#showDiv").fadeIn("slow","swing");
+        }
+
+        function toggleFunc(){
+            // 默認方式
+            // $("#showDiv").toggle("slow","swing",function () {
+            //     alert("切換了");
+            // });
+            // 滑動方式 切換
+            // $("#showDiv").slideToggle("slow","swing");
+            // 淡入淡出方式 切換
+            $("#showDiv").fadeToggle("slow","swing");
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" value="點擊按鈕隱藏div" onclick="hideFunc()">
+<input type="button" value="點擊按鈕顯示div" onclick="showFunc()">
+<input type="button" value="點擊按鈕切換div顯示和隱藏" onclick="toggleFunc()">
+<div id="showDiv" style="width: 200px;height: 200px;background-color: pink;">
+    div顯示和隱藏
+</div>
+
+</body>
+</html>

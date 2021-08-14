@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div id="div1">div1.......</div>
+<div id="div2">div2.......</div>
+
+<script>
+    //原生js
+    let divs = document.getElementsByTagName("div");
+    // alert(divs);//當數組使用
+    alert(divs.length);//當數組使用
+    // for (let i = 0; i < divs.length; i++) {
+    //     divs[i].innerHTML = "aaa";
+    // }
+    for (let i = 0; i < divs.length; i++) {
+        //js 傳換成 JQuery($(js對象))
+        $(divs[i]).html("ccc");
+    }
+
+    //JQuery
+    let $divs = $("div");
+    // alert($divs);//也可當數組
+    alert($divs.length);//也可當數組
+    // $divs.html("bbb")//達同樣效果不用遍歷
+    // JQuery轉成js(JQ對象索引或.get(索引))
+    $divs[0].innerHTML ="ddd";
+    $divs.get(1).innerHTML = "eee";
+
+    /*
+    1.JQuery 跟 js方法不通用
+    2.兩者互換
+     */
+
+</script>
+</body>
+</html>
